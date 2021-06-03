@@ -7,7 +7,14 @@ public class ClasePrueba {
         Gerente gerenteTI = new Gerente("Hector Lara", 57000.00);
         Empleado ingeniero = new Empleado("Hector Lara", 35000.0);
         gerenteTI.setDepartamento("TI Desarrollo");
-        System.out.println(ingeniero.obtenerDetalles());
-        System.out.println(gerenteTI.obtenerDetalles());
+        //System.out.println(ingeniero.obtenerDetalles());
+        //System.out.println(gerenteTI.obtenerDetalles());
+
+        imprimir(gerenteTI);
+        imprimir(ingeniero);
+    }
+
+    public static void imprimir(Empleado empleado){
+        System.out.println(empleado.obtenerDetalles());
     }
 }
