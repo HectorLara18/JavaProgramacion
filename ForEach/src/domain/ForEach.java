@@ -1,2 +1,7 @@
-package domain;public class ForEach {
+package domain;
+
+public class ForEach {
+    //Atributos
+
+    //Constructor
 }
