@@ -4,6 +4,7 @@ public class Empleado {
     //Atributos
     protected String nombre;
     protected double sueldo;
+    protected int categoria;
 
     //Constructor
     public Empleado(String nombre, double sueldo){
