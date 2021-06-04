@@ -14,9 +14,9 @@ public class TestSecurityPassword {
         boolean resultado = false;
         try {
             resultado =  passwordLeng(password);
-        } catch (OperacionExcepcion operacionExcepcion) {
-            operacionExcepcion.printStackTrace(System.out);
-            System.out.println("Ingresa un password mayor a 10 digitos");
+        } catch (OperacionExcepcion e) {
+            System.out.println(e.getMessage());
+            //System.out.println("Ingresa un password mayor a 10 digitos");
         }
         return resultado;
     }
