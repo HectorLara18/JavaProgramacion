@@ -1,7 +1,6 @@
 package test;
 
 import excepciones.OperacionExcepcion;
-
 import static aritmetica.Aritmetica.division;
 
 public class TestAritmetica3 {
