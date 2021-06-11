@@ -1,6 +1,8 @@
 package test;
 import java.util.*;
 
+//las listas si se pueden duplicar valores pero en el set no
+
 public class TestHashSet {
     public static void main(String[] args) {
         List lista1 = new ArrayList<>();
