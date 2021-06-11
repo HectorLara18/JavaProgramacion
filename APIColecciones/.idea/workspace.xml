@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1e5828f-2b43-4df6-a951-c360ea8782ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/TestHashSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testMapas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +35,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
-  <component name="RunManager" selected="Application.TestHashSet">
+  <component name="RunManager" selected="Application.testMapas">
     <configuration name="JavaSetList2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.JavaSetList2" />
       <module name="APIColecciones" />
@@ -51,19 +51,6 @@
     </configuration>
     <configuration name="Prueba" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.Prueba" />
-      <module name="APIColecciones" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Test2" />
       <module name="APIColecciones" />
       <extension name="coverage">
         <pattern>
@@ -101,13 +88,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testMapas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.testMapas" />
+      <module name="APIColecciones" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.testMapas" />
         <item itemvalue="Application.TestHashSet" />
         <item itemvalue="Application.JavaSetList2" />
         <item itemvalue="Application.Prueba" />
         <item itemvalue="Application.TestSet" />
-        <item itemvalue="Application.Test2" />
       </list>
     </recent_temporary>
   </component>
