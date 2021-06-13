@@ -48,6 +48,7 @@ public class CatalogoPeliculasImpl implements CatalogoPeliculas{
             System.out.println("Error al buscar pelicula");
             ex.printStackTrace(System.out);
         }
+        System.out.println("resultado = " + resultado);
     }
 
     @Override
