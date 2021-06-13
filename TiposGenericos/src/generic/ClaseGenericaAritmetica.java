@@ -1,3 +1,5 @@
 package generic;
 
-class ClaseGenericaAritmetica<T>{}
+class ClaseGenericaAritmetica<T>{
+
+}

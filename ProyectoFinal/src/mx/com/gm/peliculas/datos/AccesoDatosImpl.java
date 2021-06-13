@@ -42,21 +42,67 @@ public class AccesoDatosImpl  implements AccesoDatos{
 
     @Override
     public void escribrir(Peliculas pelicula, String nombreRecurso, boolean anexar) throws EscrituraDatosEx {
+        var archivo = new File(nombreRecurso);
+        try {
+            var salida = new PrintWriter(new FileWriter(archivo, anexar));
+            salida.println(pelicula.toString());
+            salida.close();
+            System.out.println("Se a escrito informacion al archivo");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            throw new EscrituraDatosEx("Excepcion al escribir peliculas");
+        }
 
     }
 
     @Override
     public String buscar(String nombreRecurso, String buscar) throws LecturaDatosEx {
-        return null;
+        var archivo = new File(nombreRecurso);
+        String resultado = null;
+        try {
+            var entrada = new BufferedReader(new FileReader(archivo));
+            String linea = null;
+            linea = entrada.readLine();
+            var indice = 1;
+            while(linea != null){
+                if(buscar != null && buscar.equalsIgnoreCase(linea)){
+                    resultado = "Pelicula " + linea + " Encontrada en el incide " + indice;
+                    break;
+                }
+                linea = entrada.readLine();
+                indice++;
+            }
+            entrada.close();
+        } catch (FileNotFoundException ex){
+            ex.printStackTrace();
+            throw new LecturaDatosEx("excepcion al buscar pelicula");
+        } catch (IOException ex){
+            ex.printStackTrace();
+            throw new LecturaDatosEx("error al leer la linea");
+        }
+        return resultado;
     }
 
     @Override
     public void crear(String nombreRecurso) throws AccesoDatosEx {
+        var archivo = new File(nombreRecurso);
+        try{
+            var salida = new PrintWriter(new FileWriter(archivo));
+            salida.close();
+            System.out.println("se a creado el archivo");
+        }catch (IOException ex){
+            ex.printStackTrace();
+            throw new AccesoDatosEx("Excepcion al crear el archivo");
+        }
 
     }
 
     @Override
     public void borrar(String nombreRecurso) throws AccesoDatosEx {
-
+        var archivo = new File(nombreRecurso);
+        if(archivo.exists()){
+            archivo.delete();
+        }
+        System.out.println("Se a borrado el archivo");
     }
 }
